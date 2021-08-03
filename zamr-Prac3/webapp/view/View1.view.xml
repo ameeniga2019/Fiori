@@ -1,0 +1,65 @@
+<mvc:View controllerName="MyAppzamr-Prac3.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.table"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				<Table items="{/mymaraSet}">
+				<columns>
+				<Column>
+				<Text text="Matnr"></Text>
+				</Column>
+				<Column>
+				<Text text="Ersda"></Text>
+				</Column>
+					<Column>
+				<Text text="Vpsta"></Text>
+				</Column>
+				<Column>
+				<Text text="Mtart"></Text>
+				</Column>
+				</columns>	
+				<ColumnListItem type="Active" >
+					<cells>
+					 <Text text="{Matnr}"/>	
+					 	<Text text="{Ersda}"></Text>
+					 		<Text text="{Vpsta}"></Text>
+					 		<Text text="{Mtart}"></Text>
+					</cells>
+				</ColumnListItem>
+				</Table>
+			
+<!--			<Table id="idProductsTable"-->
+<!--        inset="false"-->
+<!--        items="{-->
+<!--          path: '/mymaraSet'-->
+<!--        }">-->
+<!--        <headerToolbar>-->
+<!--          <Toolbar>-->
+<!--            <Label text="Mara Table "></Label>-->
+<!--          </Toolbar>-->
+<!--        </headerToolbar>-->
+<!--        <columns>-->
+<!--          <Column-->
+<!--            width="12em">-->
+<!--            <Label text="Product" />-->
+<!--          </Column>-->
+<!--        </columns>-->
+<!--        <items>-->
+<!--          <ColumnListItem>-->
+<!--            <cells>-->
+<!--              <ObjectIdentifier-->
+<!--                title="{Matnr}   {Ersda}      {Vpsta}"-->
+<!--                text="{Mtart}"-->
+                
+<!--                />-->
+<!--            </cells>-->
+<!--          </ColumnListItem>-->
+<!--        </items>-->
+<!--</Table>-->
+			
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
